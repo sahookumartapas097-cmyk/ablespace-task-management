@@ -1,6 +1,21 @@
 # AbleSpace Task Management System
 
-A full-stack Task Management System built as part of the AbleSpace Full Stack Developer Technical Assessment.
+A full-stack Task Management System built as part of the **AbleSpace Full Stack Developer Technical Assessment**.
+
+The application allows users to create, view, update, complete, and delete tasks through a responsive web interface.
+
+## 🔗 Live Links
+
+### Frontend
+https://ablespace-task-management-kv502wlfo-tapas-projects1.vercel.app/
+
+### Backend API
+https://ablespace-task-backend-6qbo.onrender.com
+
+### GitHub Repository
+https://github.com/sahookumartapas097-cmyk/ablespace-task-management
+
+---
 
 ## 🚀 Tech Stack
 
@@ -21,6 +36,13 @@ A full-stack Task Management System built as part of the AbleSpace Full Stack De
 ### Database
 - MongoDB
 
+### Deployment
+- Vercel — Frontend
+- Render — Backend
+- GitHub — Source Code
+
+---
+
 ## ✨ Features
 
 ### Dashboard
@@ -36,12 +58,15 @@ A full-stack Task Management System built as part of the AbleSpace Full Stack De
 - View all tasks
 - Create a new task
 - Edit an existing task
-- Delete a task
+- Update task title
+- Update task description
+- Update task status
+- Update task priority
 - Mark tasks as completed
-- Change task status
-- Set task priority
+- Delete tasks
 - Task validation
-- Loading and error states
+- Loading states
+- Error handling
 
 ### Theme
 - Light mode
@@ -52,40 +77,28 @@ A full-stack Task Management System built as part of the AbleSpace Full Stack De
 - Responsive layout
 - Reusable Sidebar component
 - Reusable TaskModal component
-- Consistent Tailwind CSS styling
+- Tailwind CSS styling
 - Responsive task list
-- Status and priority indicators
+- Status indicators
+- Priority indicators
 
-## 📁 Project Structure
+---
+
+## 🔄 CRUD Workflow
+
+The application supports the complete task management workflow:
 
 ```text
-ablespace-task-management/
-│
-├── backend/
-│   ├── src/
-│   │   ├── tasks/
-│   │   │   ├── dto/
-│   │   │   ├── entities/
-│   │   │   ├── tasks.controller.ts
-│   │   │   ├── tasks.service.ts
-│   │   │   └── tasks.module.ts
-│   │   ├── app.module.ts
-│   │   ├── main.ts
-│   │   └── dns-config.ts
-│   ├── test/
-│   ├── .env
-│   └── package.json
-│
-├── frontend/
-│   ├── app/
-│   │   ├── components/
-│   │   │   ├── Sidebar.tsx
-│   │   │   └── TaskModal.tsx
-│   │   ├── tasks/
-│   │   │   └── page.tsx
-│   │   ├── page.tsx
-│   │   ├── layout.tsx
-│   │   └── globals.css
-│   └── package.json
-│
-└── README.md
+Add Task
+   ↓
+View Task
+   ↓
+Edit Task
+   ↓
+Change Title / Description / Status / Priority
+   ↓
+Save Changes
+   ↓
+Updated Task
+   ↓
+Delete Task
